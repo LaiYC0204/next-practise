@@ -31,7 +31,9 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
-        {children}
+        <main className='d-flex flex-grow-1 w-75 mx-auto my-4'>
+          {children}
+        </main>
         <Footer />
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
